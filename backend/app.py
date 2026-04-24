@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from game_logic import TicTacToeLogic
+from backend.game_logic import TicTacToeLogic
 import os
 
 app = Flask(__name__)
@@ -148,8 +148,8 @@ def get_game_over_message(game_state):
         return "It's a Draw! 🤝"
     return ""
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+
+   
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
