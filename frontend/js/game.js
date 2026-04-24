@@ -12,7 +12,7 @@ const resetBtn = document.getElementById("resetGameBtn");
 const difficultyText = document.getElementById("difficulty-status");
 
 // API endpoint
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://your-backend.onrender.com/api";
 
 // Generate unique session ID
 function generateSessionId() {
