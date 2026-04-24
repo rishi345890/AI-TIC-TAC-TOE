@@ -12,7 +12,7 @@ const resetBtn = document.getElementById("resetGameBtn");
 const difficultyText = document.getElementById("difficulty-status");
 
 // API endpoint
-const API_URL = "https://your-backend.onrender.com/api";
+const API_URL = "https://ai-tic-tac-toe-backend.onrender.com"; // Update with your backend URL
 
 // Generate unique session ID
 function generateSessionId() {
