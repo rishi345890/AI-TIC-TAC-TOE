@@ -3,14 +3,15 @@ from flask_cors import CORS
 from game_logic import TicTacToeLogic
 import os
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
-
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend requests
 
 # Game state storage (in production, use a database or session)
 game_sessions = {}
+
+@app.route("/")
+def home():
+    return "Backend Running 🚀"
 
 @app.route('/api/start', methods=['POST'])
 def start_game():
@@ -100,8 +101,6 @@ def make_move():
     })
 
 @app.route('/api/reset', methods=['POST'])
-def home():
-    return "Backend Running 🚀"
 def reset_game():
     """Reset the current game"""
     data = request.json
