@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assits/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AI Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="front">
+        <h2>Welcome to AI Tic-Tac-Toe!</h2>
+        <p>You are <strong>X</strong> (play first) | AI is <strong>O</strong> (unbeatable)</p>
+    </div>
+    <div class="difficulty">
+    <h3>Select Difficulty:</h3>
+    <button onclick="setDifficulty('easy')">Easy</button>
+    <button onclick="setDifficulty('medium')">Medium</button>
+    <button onclick="setDifficulty('hard')">Hard</button>
+</div>
+<div class = "practice">
+    <p id="difficulty-status"><b>Difficulty:</b> Hard</p>
+</div>
+<div class="board" id="board">
+    <!-- 9 cells dynamically generated in JS, but statically placed for clarity -->
+    <table> 
+        <tr>
+            <td class="cell" data-index="0">&nbsp;</td>
+            <td class="cell" data-index="1">&nbsp;</td>
+            <td class="cell" data-index="2">&nbsp;</td>   
+        </tr>
+        <tr>
+            <td class="cell" data-index="3">&nbsp;</td>
+            <td class="cell" data-index="4">&nbsp;</td>
+            <td class="cell" data-index="5">&nbsp;</td>   
+        </tr>
+        <tr>
+            <td class="cell" data-index="6">&nbsp;</td>
+            <td class="cell" data-index="7">&nbsp;</td>
+            <td class="cell" data-index="8">&nbsp;</td>
+        </tr>
+    </table>
+</div>
+<div class="winner-message" id="winnerMessage"> play first!</div>
+    <button class="reset-btn" id="resetGameBtn"> &#128260; New Game</button>
+</div>
+<footer class="footer">
+    <p>&copy; MADED BY BLUE WHALE &#128011;.</p>
+</footer>
+<script src = "js/game.js"></script>
+</body>
+</html>
