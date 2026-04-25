@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const startBtn = document.getElementById("start-btn");
-
+    // API endpoint
+const API_URL = "https://ai-tic-tac-toe-backend.onrender.com";
     startBtn.addEventListener("click", () => {
 
         // Disable button
